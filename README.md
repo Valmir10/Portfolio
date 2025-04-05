@@ -39,6 +39,7 @@ http://localhost:5173/
 - **MongoDB** – For storing form submissions
 - **Mongoose** – For working with MongoDB
 - **TypeScript** – For static type checking and enhancing development workflow
+- **Node.js** – For server-side development
 
 ## 📄 License
 
