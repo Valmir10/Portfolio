@@ -38,6 +38,7 @@ http://localhost:5173/
 - **Express** – For handling backend logic
 - **MongoDB** – For storing form submissions
 - **Mongoose** – For working with MongoDB
+- **TypeScript** – For static type checking and enhancing development workflow
 
 ## 📄 License
 
