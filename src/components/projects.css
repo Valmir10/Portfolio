@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap");
+
+.projects-section-container {
+  height: 200%;
+  width: 100%;
+}
+
+.project-1-container,
+.project-2-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-information-left-container,
+.project-image-container {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-information-left-container {
+  align-items: center;
+}
+
+.project-information-wrapper {
+  height: 80%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-information-wrapper {
+  gap: 5%;
+}
+
+.project-name-header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  order: 1;
+}
+
+.project-name-header h1 {
+  font-family: "Noto Serif Georgian", serif;
+  color: rgb(217, 223, 237);
+  font-size: 30px;
+}
+
+.project-text-information {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+
+.project-text-information h3 {
+  width: 70%;
+  color: rgb(195, 208, 234);
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.project-skills-container {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  order: 3;
+}
+
+.project-skills-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 74%;
+  border-bottom: 0.5px solid rgb(217, 223, 237);
+}
+
+.project-skills-container h3 {
+  font-family: "Noto Serif Georgian", serif;
+  color: rgb(52, 230, 203);
+}
+
+.project-navigation-container {
+  height: 16%;
+  width: 100%;
+  order: 4;
+}
+
+.project-navigation-wrapper {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.visit-project-container {
+  height: 100%;
+  width: 50%;
+}
+
+.github-project-container {
+  height: 100%;
+  width: 50%;
+}
+
+.link-food-delivery-webbsite-container,
+.link-coffe-webbsite-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visit-project-img-contianer,
+.github-project-img-container {
+  height: 50%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(15, 23, 42);
+  border: 1px solid rgb(94, 234, 212);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.github-icon-project-img,
+.visit-icon-project-img {
+  height: 60%;
+  width: 60%;
+  color: rgb(94, 234, 212);
+}
+
+.visit-project-img-contianer:hover,
+:hover .github-project-img-container:hover {
+  background-color: rgb(20, 30, 55);
+  box-shadow: 0 0 10px rgba(94, 234, 212, 0.5);
+  transform: scale(1.05);
+}
+
+.visit-project-img-contianer:active,
+.github-project-img-container:active {
+  transform: scale(0.95);
+  background-color: rgb(10, 18, 35);
+}
+
+.project-image-container {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.project-image-wrapper {
+  height: 100%;
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-wrapper img {
+  height: 80%;
+  width: 80%;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 1920px) {
+  .project-image-wrapper {
+    width: 75%;
+  }
+
+  .project-text-information h3 {
+    width: 75%;
+  }
+}
+
+@media screen and (max-height: 1200px) and (max-width: 1700px) {
+  .project-information-wrapper {
+    width: 70%;
+  }
+
+  .project-text-information h3 {
+    width: 85%;
+  }
+
+  .project-image-wrapper {
+    width: 90%;
+  }
+
+  .project-navigation-wrapper {
+    width: 30%;
+  }
+}
+
+@media screen and (max-height: 1080px) and (max-width: 1500px) {
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 65% !important;
+    width: 70% !important;
+  }
+
+  .github-icon-project-img,
+  .visit-icon-project-img {
+    height: 58%;
+    width: 58%;
+  }
+
+  .project-image-wrapper {
+    width: 100% !important;
+  }
+
+  .project-image-container {
+    height: 60%;
+    width: 50%;
+    display: flex;
+  }
+
+  .project-image-wrapper img {
+    height: 80%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1470px) and (max-height: 930px) {
+  .project-image-container {
+    height: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .project-image-wrapper {
+    width: 80%;
+  }
+
+  .project-information-wrapper {
+    width: 80%;
+    margin-right: 5%;
+  }
+
+  .project-skills-container::after {
+    width: 76%;
+  }
+
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 65% !important;
+    width: 53% !important;
+  }
+
+  .github-icon-project-img,
+  .visit-icon-project-img {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1366px) and (max-height: 900px) {
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 65% !important;
+    width: 60% !important;
+  }
+
+  .github-icon-project-img,
+  .visit-icon-project-img {
+    height: 58%;
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-height: 800px) {
+  .project-information-wrapper {
+    width: 85%;
+    margin-right: 3%;
+  }
+
+  .project-skills-container::after {
+    width: 87%;
+  }
+
+  .project-text-information h3 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 720px) {
+  .project-information-left-container,
+  .project-image-container {
+    height: 80%;
+  }
+
+  .project-information-wrapper {
+    width: 93%;
+    justify-content: flex-end;
+  }
+
+  .project-skills-container::after {
+    width: 87%;
+  }
+
+  .project-information-left-container {
+    align-items: center;
+  }
+
+  .project-image-container {
+    width: 45%;
+  }
+
+  .project-information-left-container {
+    width: 55%;
+  }
+
+  .project-text-information,
+  .project-name-header,
+  .project-skills-container {
+    margin-left: 6%;
+  }
+
+  .project-navigation-wrapper {
+    margin-left: 4%;
+  }
+
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 56% !important;
+    width: 54% !important;
+  }
+
+  .project-image-wrapper {
+    height: 60%;
+    width: 100%;
+  }
+
+  .project-image-wrapper img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .project-image-container {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-height: 1600px) {
+  .projects-section-container {
+    height: 70%;
+  }
+  .project-1-container,
+  .project-2-container {
+    flex-direction: column;
+  }
+
+  .project-information-left-container,
+  .project-image-container {
+    height: 50%;
+    width: 100%;
+  }
+
+  .project-information-left-container {
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .project-information-wrapper {
+    height: 80%;
+    width: 85%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2%;
+  }
+
+  .project-text-information {
+    justify-content: center;
+
+    margin-left: 5%;
+  }
+
+  .project-name-header {
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .project-skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-navigation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-image-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-image-wrapper {
+    width: 85%;
+  }
+
+  .project-image-wrapper img {
+    width: 100%;
+  }
+
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 48%;
+    width: 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(15, 23, 42);
+    border: 1px solid rgb(94, 234, 212);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-height: 1400px) {
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 53%;
+    width: 62%;
+  }
+}
+
+@media screen and (max-width: 720px) and (max-height: 1080px) {
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 47% !important;
+    width: 47% !important;
+  }
+
+  .github-icon-project-img,
+  .visit-icon-project-img {
+    height: 60%;
+    width: 60%;
+  }
+
+  .project-information-wrapper {
+    height: 100%;
+  }
+
+  .project-image-wrapper {
+    width: 85%;
+  }
+
+  .project-image-wrapper img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 960px) {
+  .projects-section-container {
+    height: 100%;
+  }
+
+  .project-information-wrapper {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 5%;
+  }
+
+  .project-text-information {
+    height: 35%;
+  }
+
+  .project-text-information h3 {
+    width: 65%;
+    letter-spacing: 0.1px;
+    margin-right: 7%;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height: 850px) {
+  .project-name-header h1 {
+    margin-left: 4%;
+  }
+  .project-skills-container h3 {
+    font-size: 16px;
+  }
+
+  .project-skills-container {
+    margin-left: 2%;
+  }
+
+  .project-skills-container::after {
+    width: 90%;
+  }
+
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 53% !important;
+    width: 53% !important;
+  }
+
+  .project-text-information {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 0%;
+  }
+
+  .project-text-information h3 {
+    font-size: 14.5px;
+    margin-left: 17%;
+    width: 70%;
+
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 414px) and (max-height: 750px) {
+  .project-name-header h1 {
+    font-size: 25px;
+  }
+
+  .project-text-information h3 {
+    font-size: 14px;
+
+    width: 90%;
+  }
+
+  .project-skills-container h3 {
+    font-size: 14px;
+  }
+
+  .project-skills-container {
+    margin-left: 3%;
+  }
+
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 63% !important;
+    width: 63% !important;
+  }
+
+  .project-image-wrapper img {
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 375px) and (max-height: 640px) {
+  .project-name-header h1 {
+    font-size: 20px;
+
+    margin-right: 13%;
+  }
+
+  .project-name-header {
+    width: 100% !important;
+  }
+
+  .project-text-information h3 {
+    width: 100% !important;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) and (max-height: 640px) {
+  .project-skills-container h3 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-height: 640px) {
+  .project-skills-container h3 {
+    font-size: 11.5px;
+  }
+
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 60% !important;
+    width: 65% !important;
+  }
+}

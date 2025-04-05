@@ -1,0 +1,787 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap");
+
+.about-me-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.about-me-content-container {
+  height: 85%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-menu-container {
+  height: 75%;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left-menu-container {
+  height: 70%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.experience-option-container,
+.skills-option-container,
+.about-me-option-container {
+  height: 15%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 5px solid rgb(161, 175, 194);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-option-container::before,
+.skills-option-container::before,
+.about-me-option-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.experience-option-container:hover::before,
+.skills-option-container:hover::before,
+.about-me-option-container:hover::before {
+  opacity: 1;
+}
+
+.experience-option-container h2,
+.skills-option-container h2,
+.about-me-option-container h2 {
+  font-family: "Noto Serif Georgian", serif;
+  color: rgb(161, 175, 194);
+  font-size: 18px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.active {
+  border-left: 5px solid rgb(29, 233, 203);
+}
+
+.active h2 {
+  color: rgb(29, 233, 203);
+}
+
+.right-menu-container {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-text-header,
+.skills-text-header,
+.about-me-text-header {
+  height: 10% !important;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.experience-text-header h1,
+.skills-text-header h1,
+.about-me-text-header h1 {
+  color: rgb(217, 223, 237);
+}
+
+.experience-option-right-contianer,
+.skills-option-right-contianer,
+.about-me-option-right-contianer {
+  height: 90% !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-information-container,
+.skills-information-container {
+  height: 80% !important;
+  width: 100%;
+}
+
+.skills-information-container {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(29, 233, 203) transparent;
+}
+
+.skills-information-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.skills-information-container::-webkit-scrollbar-thumb {
+  background-color: rgb(29, 233, 203);
+  border-radius: 10px;
+}
+
+.skills-information-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.experience-information-row-1,
+.experience-information-row-2,
+.skills-information-row-1,
+.skills-information-row-2,
+.skills-information-row-3,
+.skills-information-row-4,
+.skills-information-row-5 {
+  height: 50% !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.malmo-jensen-container,
+.loni-cosmetics-container,
+.karlstad-university-container,
+.osbeck-high-school-container,
+.html-container,
+.css-container,
+.javascript-container,
+.react-container,
+.typescript-container,
+.node-js-container,
+.express-js-container,
+.next-js-container,
+.mongodb-container,
+.sql-container {
+  width: 50%;
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.malmo-jensen-wrapper,
+.loni-cosmetic-wrapper,
+.karlstad-university-wrapper,
+.osbeck-high-scholl-wrapper,
+.html-wrapper,
+.css-wrapper,
+.javascript-wrapper,
+.react-wrapper,
+.typescript-wrapper,
+.node-js-wrapper,
+.express-js-wrapper,
+.next-js-wrapper,
+.mongodb-wrapper,
+.sql-wrapper {
+  height: 90%;
+  width: 70%;
+  background-color: rgb(24, 36, 64);
+  border-radius: 5px;
+}
+
+.html-wrapper,
+.css-wrapper,
+.javascript-wrapper,
+.react-wrapper,
+.typescript-wrapper,
+.node-js-wrapper,
+.express-js-wrapper,
+.next-js-wrapper,
+.mongodb-wrapper,
+.sql-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html-icon-img,
+.css-icon-img,
+.javascript-icon-img,
+.react-icon-img,
+.typescript-icon-img,
+.node-js-icon-img,
+.express-js-icon-img,
+.next-js-icon-img,
+.mongodb-icon-img,
+.sql-icon-img {
+  height: 50%;
+  width: 50%;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.html-icon-img:hover,
+.css-icon-img:hover,
+.javascript-icon-img:hover,
+.react-icon-img:hover,
+.typescript-icon-img:hover,
+.node-js-icon-img:hover,
+.express-js-icon-img:hover,
+.next-js-icon-img:hover,
+.mongodb-icon-img:hover,
+.sql-icon-img:hover {
+  color: rgb(5, 244, 208);
+  cursor: pointer;
+}
+
+.malmo-jensen-year,
+.loni-cosmetic-year,
+.karlstad-university-year,
+.osbeck-high-scholl-year {
+  height: 20%;
+  width: 100%;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.malmo-jensen-year h3,
+.loni-cosmetic-year h3,
+.karlstad-university-year h3,
+.osbeck-high-scholl-year h3 {
+  margin-left: 8%;
+  font-family: "Noto Serif Georgian", serif;
+  color: rgb(123, 219, 205);
+  font-size: 16px;
+}
+
+.malmo-jensen-role,
+.loni-cosmetic-role,
+.karlstad-univesity-role,
+.osbeck-high-school-role {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.malmo-jensen-role h2,
+.loni-cosmetic-role h2,
+.karlstad-univesity-role h2,
+.osbeck-high-school-role h2 {
+  margin-left: 8%;
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 19px;
+  color: rgb(217, 223, 237);
+  margin-top: 4%;
+}
+
+.malmo-jensen-text,
+.loni-cosmetic-text,
+.karlstad-university-text,
+.osbeck-high-school-text {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.malmo-jensen-text h3,
+.loni-cosmetic-text h3,
+.karlstad-university-text h3,
+.osbeck-high-school-text h3 {
+  margin-left: 8%;
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 15px;
+  color: rgb(195, 208, 234);
+}
+
+.about-me-text-container {
+  height: 100%;
+  width: 90%;
+}
+
+.about-me-text-container h3 {
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 15px;
+  color: rgb(195, 208, 234);
+  letter-spacing: 2px;
+  margin-top: 7%;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-exit {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1920px) {
+  .about-me-content-container {
+    width: 70%;
+  }
+
+  .about-me-menu-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .malmo-jensen-wrapper,
+  .loni-cosmetic-wrapper,
+  .karlstad-university-wrapper,
+  .osbeck-high-scholl-wrapper,
+  .html-wrapper,
+  .css-wrapper,
+  .javascript-wrapper,
+  .react-wrapper,
+  .typescript-wrapper,
+  .node-js-wrapper,
+  .express-js-wrapper,
+  .next-js-wrapper,
+  .mongodb-wrapper,
+  .sql-wrapper {
+    width: 85%;
+    height: 90%;
+  }
+
+  .about-me-content-container {
+    width: 75%;
+  }
+
+  .right-menu-container {
+    height: 85%;
+  }
+
+  .left-menu-container {
+    height: 90%;
+  }
+
+  .about-me-text-container {
+    width: 85%;
+  }
+
+  .about-me-text-container h3 {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 1366px) and (max-height: 900px) {
+  .about-me-text-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 720px) {
+  .about-me-content-container {
+    height: 88%;
+    width: 85%;
+  }
+
+  .about-me-text-container h3 {
+    font-family: "Noto Serif Georgian", serif;
+    font-size: 15px;
+    color: rgb(195, 208, 234);
+    letter-spacing: 0.8px;
+    margin-top: 7%;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-height: 1600px) {
+  .about-me-section {
+    height: 50%;
+  }
+
+  .about-me-content-container {
+    width: 90%;
+  }
+
+  .about-me-menu-container {
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-menu-container {
+    /* height: 35%; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+  }
+
+  .experience-option-container,
+  .skills-option-container,
+  .about-me-option-container {
+    height: 25%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    position: relative;
+  }
+
+  .experience-option-container::after,
+  .skills-option-container::after,
+  .about-me-option-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    transition: border-color 0.3s ease;
+    width: 80%;
+    border-bottom: 3px solid rgb(161, 175, 194);
+  }
+
+  .experience-option-container.active::after,
+  .skills-option-container.active::after,
+  .about-me-option-container.active::after {
+    border-bottom: 3px solid rgb(29, 233, 203);
+  }
+
+  .experience-option-container.active h2,
+  .skills-option-container.active h2,
+  .about-me-option-container.active h2 {
+    color: rgb(29, 233, 203);
+  }
+
+  .right-menu-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me-text-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me-text-container h3 {
+    width: 80%;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin-left: 7%;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-height: 1400px) {
+  .about-me-content-container {
+    width: 100%;
+
+    height: 100%;
+  }
+
+  .about-me-menu-container {
+    height: 75%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-menu-container {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience-option-container,
+  .skills-option-container,
+  .about-me-option-container {
+    height: 25%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    position: relative;
+  }
+
+  .experience-option-container::after,
+  .skills-option-container::after,
+  .about-me-option-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    transition: border-color 0.3s ease;
+    width: 80%;
+    border-bottom: 3px solid rgb(161, 175, 194);
+  }
+
+  .experience-option-container.active::after,
+  .skills-option-container.active::after,
+  .about-me-option-container.active::after {
+    border-bottom: 3px solid rgb(29, 233, 203);
+  }
+
+  .experience-option-container.active h2,
+  .skills-option-container.active h2,
+  .about-me-option-container.active h2 {
+    color: rgb(29, 233, 203);
+  }
+
+  .right-menu-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me-text-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me-text-container h3 {
+    width: 85%;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 720px) and (max-height: 1080px) {
+  .experience-option-container,
+  .skills-option-container,
+  .about-me-option-container {
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height: 850px) {
+  .about-me-content-container {
+    align-items: flex-start;
+  }
+
+  .about-me-menu-container {
+    height: 90%;
+    width: 100%;
+  }
+
+  .malmo-jensen-year h3,
+  .loni-cosmetic-year h3,
+  .karlstad-university-year h3,
+  .osbeck-high-scholl-year h3 {
+    font-size: 14.5px;
+  }
+
+  .malmo-jensen-role h2,
+  .loni-cosmetic-role h2,
+  .karlstad-univesity-role h2,
+  .osbeck-high-school-role h2 {
+    font-size: 15px;
+  }
+
+  .malmo-jensen-text h3,
+  .loni-cosmetic-text h3,
+  .karlstad-university-text h3,
+  .osbeck-high-school-text h3 {
+    font-size: 13px;
+  }
+
+  .about-me-text-container {
+    width: 100%;
+  }
+
+  .skills-information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+  }
+
+  .experience-information-row-1,
+  .experience-information-row-2,
+  .skills-information-row-1,
+  .skills-information-row-2,
+  .skills-information-row-3,
+  .skills-information-row-4,
+  .skills-information-row-5 {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    min-height: 100%;
+  }
+
+  .malmo-jensen-container,
+  .loni-cosmetics-container,
+  .karlstad-university-container,
+  .osbeck-high-school-container,
+  .html-container,
+  .css-container,
+  .javascript-container,
+  .react-container,
+  .typescript-container,
+  .node-js-container,
+  .express-js-container,
+  .next-js-container,
+  .mongodb-container,
+  .sql-container {
+    width: 60%;
+  }
+
+  .html-wrapper,
+  .css-wrapper,
+  .javascript-wrapper,
+  .react-wrapper,
+  .typescript-wrapper,
+  .node-js-wrapper,
+  .express-js-wrapper,
+  .next-js-wrapper,
+  .mongodb-wrapper,
+  .sql-wrapper {
+    height: 85%;
+    width: 100%;
+    background-color: rgb(24, 36, 64);
+    border-radius: 5px;
+  }
+
+  .malmo-jensen-wrapper,
+  .loni-cosmetic-wrapper,
+  .karlstad-university-wrapper,
+  .osbeck-high-scholl-wrapper {
+    height: 90%;
+    width: 100%;
+
+    background-color: rgb(24, 36, 64);
+    border-radius: 5px;
+    margin-left: 5%;
+  }
+
+  .experience-information-container {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(29, 233, 203) transparent;
+  }
+
+  .experience-information-container::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .experience-information-container::-webkit-scrollbar-thumb {
+    background-color: rgb(29, 233, 203);
+    border-radius: 10px;
+  }
+
+  .experience-information-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height: 850px) {
+  .experience-option-container,
+  .skills-option-container,
+  .about-me-option-container {
+    width: 28%;
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 414px) and (max-height: 750px) {
+  .malmo-jensen-container,
+  .loni-cosmetics-container,
+  .karlstad-university-container,
+  .osbeck-high-school-container,
+  .html-container,
+  .css-container,
+  .javascript-container,
+  .react-container,
+  .typescript-container,
+  .node-js-container,
+  .express-js-container,
+  .next-js-container,
+  .mongodb-container,
+  .sql-container {
+    margin-left: 4%;
+  }
+
+  .malmo-jensen-wrapper,
+  .loni-cosmetic-wrapper,
+  .karlstad-university-wrapper,
+  .osbeck-high-scholl-wrapper {
+    margin-left: 0%;
+  }
+
+  .about-me-text-container h3 {
+    width: 75%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) and (max-height: 640px) {
+  .about-me-text-container h3 {
+    width: 75%;
+    font-size: 12px;
+  }
+
+  .experience-option-container h2,
+  .skills-option-container h2,
+  .about-me-option-container h2 {
+    font-size: 14px;
+  }
+
+  .about-me-text-header h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-height: 640px) {
+  .about-me-text-container h3 {
+    width: 75%;
+    font-size: 10.5px;
+  }
+
+  .experience-option-container h2,
+  .skills-option-container h2,
+  .about-me-option-container h2 {
+    font-size: 12px;
+  }
+
+  .malmo-jensen-container,
+  .loni-cosmetics-container,
+  .karlstad-university-container,
+  .osbeck-high-school-container,
+  .html-container,
+  .css-container,
+  .javascript-container,
+  .react-container,
+  .typescript-container,
+  .node-js-container,
+  .express-js-container,
+  .next-js-container,
+  .mongodb-container,
+  .sql-container {
+    width: 70%;
+  }
+}

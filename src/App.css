@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 570vh;
+  width: 100vw;
+  overflow-x: hidden;
+
+  /* background-color: rgb(27, 27, 55); */
+  background-color: rgb(15, 23, 42);
+  scroll-behavior: smooth;
+}
+
+.a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 900px) and (max-height: 1600px) {
+  html,
+  body {
+    height: 500vh;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 960px) {
+  html,
+  body {
+    height: 510vh;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height: 850px) {
+  html,
+  body {
+    height: 530vh;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height: 850px) {
+  html,
+  body {
+    height: 550vh;
+  }
+}
+
+@media screen and (max-width: 375px) and (max-height: 640px) {
+  html,
+  body {
+    height: 565vh;
+  }
+}

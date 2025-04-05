@@ -1,0 +1,986 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+.hero-section-container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero-image-content-container {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-container {
+  position: relative;
+  height: 70%;
+  width: 40%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.hero-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.flame-hero-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid rgb(53, 244, 53);
+  pointer-events: none;
+
+  filter: drop-shadow(0px 0px 15px rgba(53, 244, 53, 0.8))
+    drop-shadow(0px 0px 30px rgba(53, 244, 53, 0.5));
+}
+
+/*hero-text-container*/
+
+.hero-text-container {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content-text-container {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+
+.text-1-hero {
+  height: 10%;
+  width: 100%;
+  display: flex;
+}
+
+.text-1-hero h3 {
+  color: rgb(123, 219, 205);
+  font-family: "Roboto", serif;
+  font-size: 21px;
+}
+
+.text-2-hero {
+  width: 100%;
+  height: 30%;
+}
+
+.text-2-hero h1 {
+  font-size: 50px;
+  font-family: "Noto Serif Georgian", serif;
+
+  color: rgb(195, 208, 234);
+}
+
+#hero-valmir-zogaj {
+  color: rgb(217, 223, 237);
+}
+
+.text-3-hero {
+  height: 30%;
+  width: 100%;
+}
+
+.text-3-hero h3 {
+  color: rgb(195, 208, 234);
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+}
+
+.hero-information {
+  position: absolute;
+  bottom: 0px;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.download-cv-container {
+  height: 100%;
+  width: 39%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.download-cv-container button {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 100%;
+  border: 1px solid rgb(94, 234, 212);
+  border-radius: 40px;
+  background-color: rgb(15, 23, 42);
+
+  color: rgb(94, 234, 212);
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.download-cv-text {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin-right: 4%;
+
+  font-family: "Source Sans 3", serif;
+
+  font-size: 17px;
+  gap: 6%;
+}
+
+.download-cv-img-container {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.download-cv-img-container img {
+  width: 50%;
+  height: 60%;
+}
+
+.download-cv-container button:hover,
+.email-hero-img-container:hover,
+.github-hero-img-container:hover,
+.linkedin-hero-img-container:hover {
+  background-color: rgb(20, 30, 55);
+  box-shadow: 0 0 10px rgba(94, 234, 212, 0.5);
+  transform: scale(1.05);
+}
+
+.download-cv-container button:active,
+.email-hero-img-container:active,
+.github-hero-img-container:active,
+.linkedin-hero-img-container:active {
+  transform: scale(0.95);
+  background-color: rgb(10, 18, 35);
+}
+
+.hero-information-social-media-container {
+  width: 61%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-wrapper {
+  height: 100%;
+  width: 93%;
+  display: flex;
+  flex-direction: row;
+}
+
+.email-hero-contianer,
+.github-hero-contianer,
+.linkedin-hero-container {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.link-github-container,
+.linkedin-link-container,
+.email-link-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.email-hero-img-container,
+.github-hero-img-container,
+.linkedin-hero-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45%;
+  width: 55%;
+  border-radius: 50%;
+  background-color: rgb(15, 23, 42);
+  border: 1px solid rgb(94, 234, 212);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-hero-img-container img,
+.github-icon,
+.linkedin-icon {
+  height: 60%;
+  width: 60%;
+}
+
+.linkedin-icon,
+.github-icon {
+  color: rgb(94, 234, 212);
+}
+
+.cv-link-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+/*Responsive */
+
+@media screen and (max-width: 1920px) {
+  .hero-image-container {
+    height: 80%;
+  }
+
+  .hero-text-container {
+    height: 72%;
+  }
+}
+
+@media screen and (max-height: 1200px) and (max-width: 1700px) {
+  .hero-content-text-container {
+    width: 75%;
+  }
+
+  .hero-image-container {
+    width: 53%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-height: 1080px) and (max-width: 1500px) {
+  .hero-image-container {
+    width: 55%;
+  }
+
+  .hero-content-text-container {
+    width: 75%;
+  }
+
+  .download-cv-container {
+    width: 50%;
+  }
+
+  .hero-information-social-media-container {
+    width: 50%;
+  }
+
+  .email-hero-contianer,
+  .github-hero-contianer,
+  .linkedin-hero-container {
+    height: 100%;
+    width: 35%;
+  }
+
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 30%;
+    width: 70%;
+  }
+
+  .email-hero-img-container img,
+  .github-icon,
+  .linkedin-icon {
+    height: 60%;
+    width: 60%;
+  }
+
+  .download-cv-text {
+    width: 65%;
+  }
+
+  .download-cv-img-container {
+    width: 35%;
+  }
+
+  .hero-information {
+    height: 13%;
+  }
+
+  .download-cv-img-container img {
+    width: 40%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 1470px) and (max-height: 930px) {
+  .hero-content-text-container {
+    width: 80%;
+  }
+
+  .hero-image-container {
+    width: 45%;
+    height: 75%;
+  }
+
+  .download-cv-container button {
+    height: 55%;
+  }
+
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 60% !important;
+    width: 50% !important;
+  }
+
+  .email-hero-img-container img,
+  .github-icon,
+  .linkedin-icon {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1366px) and (max-height: 900px) {
+  .hero-image-container {
+    width: 53%;
+  }
+
+  .hero-content-text-container {
+    width: 85%;
+  }
+
+  .download-cv-img-container img {
+    width: 35%;
+    height: 65%;
+  }
+
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 55% !important;
+    width: 55% !important;
+  }
+
+  .email-hero-img-container img,
+  .github-icon,
+  .linkedin-icon {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero-text-container {
+    height: 75%;
+  }
+
+  .hero-content-text-container {
+    width: 75%;
+  }
+
+  .text-1-hero {
+    align-items: center;
+  }
+
+  .text-3-hero {
+    height: 40%;
+  }
+}
+
+.email-hero-img-container,
+.github-hero-img-container,
+.linkedin-hero-img-container {
+  height: 50%;
+  width: 60%;
+}
+
+@media screen and (max-width: 1200px) and (max-height: 800px) {
+  .hero-content-text-container {
+    width: 80%;
+  }
+
+  .download-cv-text {
+    width: 70%;
+  }
+
+  .download-cv-img-container {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 720px) {
+  .hero-image-container {
+    width: 50% !important;
+    height: 70% !important;
+  }
+
+  .hero-text-container {
+    height: 85%;
+  }
+
+  .hero-content-text-container {
+    width: 90% !important;
+  }
+
+  .text-3-hero {
+    width: 98%;
+
+    height: 30%;
+  }
+
+  .text-3-hero h3 {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/*phones*/
+
+@media screen and (max-width: 900px) and (max-height: 1600px) {
+  .hero-section-container {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image-content-container {
+    height: 35%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image-container {
+    width: 85% !important;
+    height: 70% !important;
+  }
+
+  .hero-text-container {
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 70%;
+  }
+
+  .hero-content-text-container {
+    height: 80%;
+    width: 100%;
+  }
+
+  .text-1-hero,
+  .text-2-hero {
+    justify-content: center;
+  }
+
+  .text-2-hero {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .text-3-hero {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-3-hero h3 {
+    width: 95%;
+    letter-spacing: 0.2px;
+    margin-left: 10%;
+  }
+
+  .hero-information {
+    margin-left: 10%;
+    height: 13%;
+  }
+
+  .text-1-hero h3 {
+    font-size: 22px;
+  }
+
+  .download-cv-img-container img {
+    height: 62%;
+    width: 49%;
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-height: 1400px) {
+  .hero-image-container {
+    width: 85% !important;
+    height: 75% !important;
+  }
+
+  .text-3-hero h3 {
+    width: 85%;
+    letter-spacing: 0.2px;
+    margin-left: 8 !important;
+  }
+
+  .hero-text-container {
+    width: 75%;
+  }
+
+  .hero-information {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .download-cv-container {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .download-cv-container button {
+    width: 80%;
+    height: 55%;
+  }
+
+  .hero-information-social-media-container {
+    width: 50%;
+  }
+
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 55%;
+    width: 75%;
+  }
+
+  .download-cv-img-container img {
+    height: 62%;
+    width: 49%;
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1280px) {
+  .hero-image-container {
+    width: 85% !important;
+    height: 75% !important;
+  }
+
+  .hero-text-container {
+    width: 75%;
+  }
+
+  .text-3-hero h3 {
+    width: 90%;
+    letter-spacing: 0.2px;
+    margin-left: 5%;
+  }
+
+  .hero-information {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .download-cv-container {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .download-cv-container button {
+    width: 80%;
+    height: 55%;
+  }
+
+  .hero-information-social-media-container {
+    width: 50%;
+  }
+
+  .download-cv-img-container img {
+    height: 62%;
+    width: 49%;
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 720px) and (max-height: 1080px) {
+  .hero-image-container {
+    width: 75% !important;
+    height: 75% !important;
+  }
+
+  .hero-text-container {
+    width: 75%;
+  }
+
+  .download-cv-container button {
+    width: 85%;
+    height: 60%;
+  }
+
+  .download-cv-text {
+    width: 70%;
+  }
+
+  .download-cv-img-container {
+    width: 30%;
+  }
+
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    width: 55% !important;
+  }
+
+  .download-cv-img-container img {
+    height: 62%;
+    width: 49%;
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 960px) {
+  .hero-image-content-container {
+    height: 30%;
+  }
+
+  .hero-image-container {
+    height: 90%;
+    width: 100%;
+  }
+
+  .hero-text-container {
+    height: 50%;
+    width: 85%;
+  }
+
+  .hero-content-text-container {
+    height: 100%;
+  }
+
+  .text-2-hero {
+    width: 100%;
+    height: 25%;
+  }
+
+  .text-2-hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-information {
+    height: 19%;
+  }
+
+  .text-3-hero h3 {
+    width: 90%;
+    letter-spacing: 0.2px;
+    margin-left: 5%;
+  }
+
+  .download-cv-container {
+    height: 70%;
+    align-items: flex-start;
+  }
+
+  .email-hero-contianer,
+  .github-hero-contianer,
+  .linkedin-hero-container {
+    height: 70%;
+    align-items: flex-start;
+  }
+
+  .download-cv-text {
+    width: 72%;
+  }
+
+  .download-cv-img-container {
+    width: 28%;
+  }
+
+  .download-cv-img-container img {
+    height: 65%;
+    width: 52%;
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height: 850px) {
+  .hero-image-content-container {
+    height: 30%;
+  }
+
+  .hero-image-container {
+    height: 85% !important;
+    width: 100% !important;
+  }
+
+  .hero-text-container {
+    height: 50%;
+    width: 100%;
+  }
+
+  .text-2-hero {
+    width: 100%;
+    height: 20%;
+  }
+
+  .text-2-hero h1 {
+    font-size: 29px;
+  }
+
+  .text-3-hero h3 {
+    width: 75%;
+    letter-spacing: 0px;
+    margin-left: 5%;
+    font-size: 15px;
+  }
+
+  .text-3-hero {
+    height: 40%;
+    align-items: center;
+  }
+
+  .hero-information {
+    height: 19%;
+  }
+
+  .download-cv-container {
+    justify-content: flex-end;
+  }
+
+  .email-hero-contianer,
+  .github-hero-contianer,
+  .linkedin-hero-container {
+    width: 29%;
+    justify-content: flex-end;
+  }
+
+  .social-media-wrapper {
+    width: 100%;
+  }
+
+  .download-cv-text {
+    width: 74%;
+  }
+
+  .download-cv-img-container {
+    width: 26%;
+  }
+
+  .download-cv-img-container img {
+    height: 68%;
+    width: 55%;
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 414px) and (max-height: 750px) {
+  .hero-section-container {
+    height: 55%;
+  }
+  .text-2-hero {
+    width: 100%;
+    height: 18%;
+  }
+
+  .text-1-hero h3 {
+    font-size: 17px;
+  }
+
+  .text-2-hero h1 {
+    font-size: 23px;
+  }
+
+  .text-3-hero h3 {
+    width: 85%;
+    letter-spacing: 0px;
+    margin-left: 5%;
+    font-size: 15px;
+  }
+
+  .text-3-hero {
+    height: 40%;
+    align-items: center;
+  }
+
+  .download-cv-text {
+    font-size: 15px;
+  }
+
+  .download-cv-text {
+    width: 72%;
+  }
+
+  .download-cv-img-container {
+    width: 28%;
+  }
+
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 62% !important;
+    width: 60% !important;
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 375px) and (max-height: 640px) {
+  .text-2-hero {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .break-line {
+    display: none;
+  }
+
+  .text-2-hero h1 {
+    font-size: 20px;
+  }
+
+  .text-3-hero {
+    height: 45%;
+  }
+
+  .text-3-hero h3 {
+    width: 90%;
+    font-size: 13.5px;
+    margin-left: 12%;
+  }
+
+  .download-cv-container {
+    width: 57%;
+  }
+
+  .download-cv-container button {
+    height: 65%;
+    width: 85%;
+  }
+
+  .hero-information-social-media-container {
+    width: 43%;
+  }
+
+  .download-cv-text {
+    width: 71%;
+    font-size: 13.5px;
+  }
+
+  .download-cv-img-container {
+    width: 29%;
+  }
+
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 63% !important;
+    width: 70% !important;
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 360px) and (max-height: 640px) {
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 62% !important;
+    width: 70% !important;
+    margin-bottom: 2%;
+  }
+
+  .download-cv-text {
+    width: 73%;
+    font-size: 13.5px;
+  }
+
+  .download-cv-img-container {
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-height: 640px) {
+  .hero-image-content-container {
+    height: 30%;
+  }
+
+  .hero-image-container {
+    height: 75% !important;
+    width: 100% !important;
+  }
+
+  .text-3-hero h3 {
+    width: 90%;
+    font-size: 12px;
+    margin-left: 10%;
+  }
+
+  .download-cv-text {
+    width: 75%;
+  }
+
+  .download-cv-img-container {
+    width: 25%;
+  }
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 60% !important;
+    width: 80% !important;
+    margin-bottom: 0%;
+    margin-top: 1%;
+  }
+
+  .download-cv-container {
+    width: 53%;
+  }
+
+  .download-cv-container button {
+    height: 72%;
+    width: 85%;
+  }
+
+  .hero-information-social-media-container {
+    width: 47%;
+  }
+
+  .social-media-wrapper {
+    width: 85%;
+  }
+
+  .email-hero-contianer {
+    justify-content: flex-start !important;
+  }
+
+  .github-hero-contianer {
+    justify-content: center !important;
+  }
+
+  .linkedin-hero-container {
+    justify-content: flex-end !important;
+  }
+
+  .download-cv-img-container img {
+    height: 70%;
+    width: 60%;
+  }
+}
