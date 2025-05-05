@@ -249,7 +249,8 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (max-height: 720px) {
+@media screen and (max-width: 1024px) and (max-height: 720px),
+  screen and (max-width: 1024px) and (max-height: 768px) {
   .contact-form-container {
     height: 75%;
     width: 75%;
@@ -367,7 +368,10 @@
   }
 }
 
-@media screen and (max-width: 480px) and (max-height: 850px) {
+@media screen and (max-width: 480px) and (max-height: 850px),
+  screen and (max-width: 412px) and (max-height: 915px),
+  screen and (max-width: 430px) and (max-height: 932px),
+  screen and (max-width: 428px) and (max-height: 926px) {
   .contact-section-container {
     height: 60%;
   }
@@ -387,6 +391,14 @@
   }
 }
 
+@media screen and (max-width: 390px) and (max-height: 844px) {
+  .contact-form-container {
+    height: 85%;
+    width: 80%;
+    margin-right: 3%;
+  }
+}
+
 @media screen and (max-width: 414px) and (max-height: 750px) {
   .contact-form-container {
     height: 85%;
@@ -395,7 +407,8 @@
   }
 }
 
-@media screen and (max-width: 375px) and (max-height: 640px) {
+@media screen and (max-width: 375px) and (max-height: 640px),
+  screen and (max-width: 375px) and (max-height: 667px) {
   .text-1-container h1 {
     font-size: 20px;
   }

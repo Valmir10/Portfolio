@@ -301,7 +301,8 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (max-height: 720px) {
+@media screen and (max-width: 1024px) and (max-height: 720px),
+  screen and (max-width: 1024px) and (max-height: 768px) {
   .project-information-left-container,
   .project-image-container {
     height: 80%;
@@ -495,6 +496,105 @@
   }
 }
 
+@media screen and (max-width: 430px) and (max-height: 932px) {
+  .project-name-header h1 {
+    margin-left: 4%;
+  }
+  .project-skills-container h3 {
+    font-size: 16px;
+  }
+
+  .project-skills-container {
+    margin-left: 0%;
+  }
+
+  .project-skills-container::after {
+    width: 92%;
+  }
+
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 55% !important;
+    width: 65% !important;
+  }
+
+  .project-text-information {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 0%;
+  }
+
+  .project-text-information h3 {
+    font-size: 14.5px;
+    margin-left: 17%;
+    width: 70%;
+
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 412px) and (max-height: 915px),
+  screen and (max-width: 428px) and (max-height: 926px) {
+  .project-name-header h1 {
+    margin-left: 4%;
+  }
+  .project-skills-container h3 {
+    font-size: 16px;
+  }
+
+  .project-skills-container {
+    margin-left: 2.3%;
+  }
+
+  .project-skills-container::after {
+    width: 96%;
+  }
+
+  .visit-project-img-contianer,
+  .github-project-img-container {
+    height: 55% !important;
+    width: 65% !important;
+  }
+
+  .project-text-information {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 0%;
+  }
+
+  .project-text-information h3 {
+    font-size: 14.5px;
+    margin-left: 17%;
+    width: 70%;
+
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+  .project-text-information h3 {
+    font-size: 14.5px;
+
+    width: 100%;
+    margin-left: 25% !important;
+
+    letter-spacing: 0px;
+  }
+
+  .project-skills-container h3 {
+    font-size: 14px !important;
+  }
+  .project-navigation-container {
+    height: 18%;
+  }
+
+  .project-navigation-wrapper {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 480px) and (max-height: 850px) {
   .project-name-header h1 {
     margin-left: 4%;
@@ -563,7 +663,8 @@
   }
 }
 
-@media screen and (max-width: 375px) and (max-height: 640px) {
+@media screen and (max-width: 375px) and (max-height: 640px),
+  screen and (max-width: 375px) and (max-height: 667px) {
   .project-name-header h1 {
     font-size: 20px;
 

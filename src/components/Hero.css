@@ -430,10 +430,11 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (max-height: 720px) {
+@media screen and (max-width: 1024px) and (max-height: 720px),
+  screen and (max-width: 1024px) and (max-height: 768px) {
   .hero-image-container {
     width: 50% !important;
-    height: 70% !important;
+    height: 68% !important;
   }
 
   .hero-text-container {
@@ -445,14 +446,14 @@
   }
 
   .text-3-hero {
-    width: 98%;
+    width: 93%;
 
     height: 30%;
   }
 
   .text-3-hero h3 {
     font-size: 15px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -722,6 +723,87 @@
   }
 }
 
+@media screen and (max-width: 412px) and (max-height: 915px),
+  screen and (max-width: 430px) and (max-height: 932px),
+  screen and (max-width: 428px) and (max-height: 926px) {
+  .hero-image-content-container {
+    height: 30%;
+  }
+
+  .hero-image-container {
+    height: 75% !important;
+    width: 100% !important;
+  }
+
+  .hero-text-container {
+    height: 50%;
+    width: 100%;
+  }
+
+  .text-2-hero {
+    width: 100%;
+    height: 20%;
+  }
+
+  .text-2-hero h1 {
+    font-size: 29px;
+  }
+
+  .text-3-hero h3 {
+    width: 75%;
+    letter-spacing: 0px;
+    margin-left: 5%;
+    font-size: 15px;
+  }
+
+  .text-3-hero {
+    height: 40%;
+    align-items: center;
+  }
+
+  .hero-information {
+    height: 19%;
+  }
+
+  .download-cv-container button {
+    margin-left: 25px;
+  }
+
+  .email-hero-contianer,
+  .github-hero-contianer,
+  .linkedin-hero-container {
+    width: 29%;
+
+    justify-content: flex-end;
+  }
+
+  .social-media-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .download-cv-text {
+    width: 74%;
+  }
+
+  .download-cv-img-container {
+    width: 26%;
+  }
+
+  .download-cv-img-container img {
+    height: 68%;
+    width: 55%;
+    margin-bottom: 1%;
+  }
+
+  .email-hero-img-container,
+  .github-hero-img-container,
+  .linkedin-hero-img-container {
+    height: 56% !important;
+    width: 60% !important;
+  }
+}
+
 @media screen and (max-width: 480px) and (max-height: 850px) {
   .hero-image-content-container {
     height: 30%;
@@ -762,33 +844,69 @@
     height: 19%;
   }
 
-  .download-cv-container {
-    justify-content: flex-end;
+  .download-cv-container button {
+    margin-left: 25px;
   }
 
   .email-hero-contianer,
   .github-hero-contianer,
   .linkedin-hero-container {
     width: 29%;
+
     justify-content: flex-end;
   }
 
   .social-media-wrapper {
     width: 100%;
+    justify-content: center;
   }
 
   .download-cv-text {
-    width: 74%;
+    width: 70%;
   }
 
   .download-cv-img-container {
-    width: 26%;
+    width: 30%;
   }
 
   .download-cv-img-container img {
     height: 68%;
     width: 55%;
     margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+  .hero-image-container {
+    height: 70% !important;
+    width: 100% !important;
+  }
+  .download-cv-text {
+    font-size: 15px;
+  }
+
+  .download-cv-text {
+    width: 72%;
+  }
+
+  .download-cv-img-container {
+    width: 28%;
+  }
+  .text-2-hero {
+    width: 100%;
+    height: 18%;
+  }
+
+  .text-3-hero h3 {
+    width: 85%;
+    letter-spacing: 0px;
+    margin-left: 10%;
+    font-size: 15px;
+  }
+
+  .text-3-hero {
+    height: 40%;
+    align-items: center;
   }
 }
 
@@ -842,7 +960,12 @@
   }
 }
 
-@media screen and (max-width: 375px) and (max-height: 640px) {
+@media screen and (max-width: 375px) and (max-height: 640px),
+  screen and (max-width: 375px) and (max-height: 667px) {
+  .hero-image-container {
+    height: 70% !important;
+    width: 85% !important;
+  }
   .text-2-hero {
     width: 100%;
     height: 15%;
