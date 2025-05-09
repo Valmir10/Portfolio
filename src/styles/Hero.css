@@ -360,6 +360,12 @@
     height: 60%;
     width: 60%;
   }
+
+  .download-cv-img-container img {
+    height: 65%;
+    width: 35%;
+    margin-bottom: 1%;
+  }
 }
 
 @media screen and (max-width: 1366px) and (max-height: 900px) {

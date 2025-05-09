@@ -1,0 +1,64 @@
+.hero-image-container,
+.text-1-hero,
+.text-2-hero,
+.text-3-hero,
+.hero-information,
+.about-me-content-container,
+#project-information-wrapper-1,
+#project-information-wrapper-2,
+#project-image-container-1,
+#project-image-container-2,
+#contact-text-1,
+#contact-text-2,
+.contact-form-container {
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleShadowIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-image-container.in-view {
+  animation: fadeInUp 2s ease-out 0.5s forwards;
+}
+.text-1-hero.in-view {
+  animation: fadeInUp 2s ease-out 1s forwards;
+}
+.text-2-hero.in-view {
+  animation: fadeInUp 2s ease-out 1.5s forwards;
+}
+.text-3-hero.in-view {
+  animation: fadeInUp 2s ease-out 2s forwards;
+}
+.hero-information.in-view {
+  animation: fadeInUp 2s ease-out 2.5s forwards;
+}
+
+.about-me-content-container.in-view,
+#project-information-wrapper-1.in-view,
+#project-information-wrapper-2.in-view,
+#project-image-container-1.in-view,
+#project-image-container-2.in-view,
+#contact-text-1.in-view,
+#contact-text-2.in-view,
+.contact-form-container.in-view {
+  animation: scaleShadowIn 2s ease-out 0.5s forwards;
+}

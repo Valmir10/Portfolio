@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-import "./AboutMe.css";
+import "../styles/AboutMe.css";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";

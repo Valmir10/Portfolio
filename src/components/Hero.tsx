@@ -1,4 +1,5 @@
-import "./Hero.css";
+import "../styles/Hero.css";
+import "../styles/effects.css";
 import downloadCvImage from "../img/download-cv.png";
 import emailIconHero from "../img/email-icon-hero.png";
 import { FaLinkedin } from "react-icons/fa";

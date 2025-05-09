@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "../styles/Contact.css";
 
 import React, { useState } from "react";
 
@@ -55,11 +55,11 @@ const Contact: React.FC = () => {
       <div className="contact-text-left-container">
         <div className="contact-text-left-wrapper">
           <div className="contact-texts-information-container">
-            <div className="text-1-container">
+            <div className="text-1-container" id="contact-text-1">
               <h1>Let's get in touch</h1>
             </div>
 
-            <div className="text-2-container">
+            <div className="text-2-container" id="contact-text-2">
               <h3>
                 I'm open to new opportunities! Reach out, and let's discuss how
                 I can bring value to your team.

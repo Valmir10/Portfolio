@@ -1,4 +1,4 @@
-import "./projects.css";
+import "../styles/Projects.css";
 import foodDeliveryImage from "../img/food-delivery-image.png";
 import coffeWebsiteImage from "../img/coffe-website-image.png";
 import { FaGithub } from "react-icons/fa";
@@ -9,7 +9,10 @@ const Projects = () => {
     <section className="projects-section-container">
       <div className="project-1-container">
         <div className="project-information-left-container">
-          <div className="project-information-wrapper">
+          <div
+            className="project-information-wrapper"
+            id="project-information-wrapper-1"
+          >
             <div className="project-name-header">
               <h1>Food Delivery Website</h1>
             </div>
@@ -58,7 +61,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="project-image-container">
+        <div className="project-image-container" id="project-image-container-1">
           <div className="project-image-wrapper">
             <img src={foodDeliveryImage} alt="" />
           </div>
@@ -67,7 +70,10 @@ const Projects = () => {
 
       <div className="project-2-container">
         <div className="project-information-left-container">
-          <div className="project-information-wrapper">
+          <div
+            className="project-information-wrapper"
+            id="project-information-wrapper-1"
+          >
             <div className="project-name-header">
               <h1>Coffe Website</h1>
             </div>
@@ -116,7 +122,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="project-image-container">
+        <div className="project-image-container" id="project-image-container-1">
           <div className="project-image-wrapper">
             <img src={coffeWebsiteImage} alt="" />
           </div>
