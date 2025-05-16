@@ -6,19 +6,19 @@ const Header = () => {
       <header className="header-container">
         <div className="header-content-container">
           <div className="link-header-container">
-            <a>About</a>
+            <a href="#about">About</a>
           </div>
 
           <div className="link-header-container">
-            <a>Experience</a>
+            <a href="#experince">Experience</a>
           </div>
 
           <div className="link-header-container">
-            <a>Projects</a>
+            <a href="#projects">Projects</a>
           </div>
 
           <div className="link-header-container">
-            <a>Contact</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
 

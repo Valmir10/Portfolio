@@ -6,7 +6,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Projects = () => {
   return (
-    <section className="projects-section-container">
+    <section id="projects" className="projects-section-container">
       <div className="project-1-container">
         <div className="project-information-left-container">
           <div

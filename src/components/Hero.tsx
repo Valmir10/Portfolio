@@ -9,7 +9,7 @@ import heroImage from "../img/hero-image-portfolio.jpg";
 
 const Hero = () => {
   return (
-    <section className="hero-section-container">
+    <section id="about" className="hero-section-container">
       <div className="hero-image-content-container">
         <div className="hero-image-container">
           <div className="flame-hero-container"></div>

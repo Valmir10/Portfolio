@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="contact-section-container">
+    <section id="contact" className="contact-section-container">
       <div className="contact-text-left-container">
         <div className="contact-text-left-wrapper">
           <div className="contact-texts-information-container">
