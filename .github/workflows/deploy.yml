@@ -1,12 +1,12 @@
 name: CI / Deploy to GitHub Pages
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: read
   pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies (ignore peer-deps)
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build
