@@ -28,12 +28,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Dummy artifact fix
-        uses: actions/upload-artifact@v2
-        with:
-          name: dummy
-          path: README.md
-
       - name: Upload build output
         uses: actions/upload-pages-artifact@v2
         with:
