@@ -29,10 +29,10 @@ jobs:
         run: npm run build
 
       - name: Dummy artifact fix
-        uses: actions/upload-artifact@v2.1.4
+        uses: actions/upload-artifact@v2.3.1
         with:
           name: dummy
-          path: README.md # eller nåt litet som alltid finns
+          path: README.md
 
       - name: Upload build output
         uses: actions/upload-pages-artifact@v2
