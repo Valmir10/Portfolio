@@ -39,22 +39,28 @@
   position: absolute;
   height: 100%;
   width: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   right: 0;
 }
 
+.resume-link-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .resume-header-container button {
-  height: 55%;
+  height: 50%;
   width: 45%;
   font-family: "Inter", serif;
   font-size: 15px;
   border-radius: 5px;
   background-color: transparent;
   cursor: pointer;
-  margin-top: 5%;
+  /* margin-top: 7.5%; */
   color: rgb(94, 234, 212);
   border: 0.8px solid rgb(147, 213, 203);
   letter-spacing: 1px;
@@ -79,13 +85,24 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1700px) and (max-height: 1200px) {
+  .resume-header-container button {
+    height: 45%;
+    width: 50%;
+    /* margin-top: 10%; */
+  }
+}
+
+@media screen and (max-width: 1500px) and (max-height: 1080px) {
+}
+
 @media screen and (max-width: 1470px) and (max-height: 930px) {
   .header-content-container {
     width: 35%;
   }
 
   .resume-header-container button {
-    height: 60%;
+    height: 50%;
     width: 50%;
   }
 }
@@ -97,6 +114,7 @@
 
   .resume-header-container button {
     width: 55%;
+    height: 50%;
   }
 }
 
@@ -112,7 +130,7 @@
 
   .resume-header-container button {
     width: 55%;
-    height: 65%;
+    height: 55%;
   }
 }
 
@@ -128,8 +146,8 @@
   }
 
   .resume-header-container button {
-    width: 80%;
-    height: 40%;
+    width: 75%;
+    height: 35%;
   }
 }
 
@@ -154,7 +172,7 @@
     justify-content: flex-start;
   }
   .resume-header-container button {
-    height: 47%;
+    height: 40%;
   }
 }
 
@@ -168,15 +186,29 @@
     display: none;
   }
 
+  .resume-header-container {
+    width: 30%;
+    /* justify-content: center; */
+  }
+}
+
+@media screen and (max-width: 480px) and (max-height: 850px) {
   .resume-header-container button {
     width: 80%;
     height: 53%;
     margin-left: 3%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
-  .resume-header-container {
-    width: 30%;
-    /* justify-content: center; */
+}
+
+@media screen and (max-width: 412px) and (max-height: 915px),
+  screen and (max-width: 430px) and (max-height: 932px),
+  screen and (max-width: 428px) and (max-height: 926px) {
+  .resume-header-container button {
+    width: 80%;
+    height: 45%;
+    margin-left: 0%;
+    margin-top: 10px;
   }
 }
 
@@ -187,6 +219,14 @@
   }
   .resume-header-container button {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 393px) and (max-height: 851px),
+  screen and (max-width: 390px) and (max-height: 844px) {
+  .resume-header-container button {
+    font-size: 14px;
+    margin-bottom: 0;
   }
 }
 

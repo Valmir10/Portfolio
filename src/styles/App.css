@@ -6,7 +6,8 @@
 
 html,
 body {
-  height: 500vh;
+  /* height: 600vh; */
+  height: auto;
   width: 100vw;
   overflow-x: hidden;
 
@@ -20,12 +21,15 @@ body {
   color: inherit;
 }
 
+/*
+
 @media screen and (max-width: 900px) and (max-height: 1600px) {
   html,
   body {
     height: 500vh;
   }
 }
+
 
 @media screen and (max-width: 600px) and (max-height: 960px) {
   html,
@@ -54,3 +58,5 @@ body {
     height: 565vh;
   }
 }
+
+*/

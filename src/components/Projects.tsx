@@ -1,3 +1,21 @@
+import React from "react";
+import "../styles/Projects.css";
+import FoodDelivery from "./FoodDelivery";
+import CoffeeWebsite from "./CoffeeWebsite";
+import LoniCosmetics from "./LoniCosmetics";
+
+const Projects: React.FC = () => (
+  <section id="projects" className="projects-section-container">
+    <FoodDelivery />
+    <CoffeeWebsite />
+    <LoniCosmetics />
+  </section>
+);
+
+export default Projects;
+
+/*
+
 import "../styles/Projects.css";
 import foodDeliveryImage from "../img/food-delivery-image.png";
 import coffeWebsiteImage from "../img/coffe-website-image.png";
@@ -133,3 +151,6 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
+*/
