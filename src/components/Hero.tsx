@@ -1,6 +1,7 @@
 import "../styles/Hero.css";
 import "../styles/effects.css";
 import downloadCvImage from "../img/download-cv.png";
+
 import emailIconHero from "../img/email-icon-hero.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -41,7 +42,7 @@ const Hero = () => {
           <div className="hero-information">
             <div className="download-cv-container">
               <a
-                href="/CV/CV-portfolio-english.pdf"
+                href="public/CV/CV-portfolio-english.pdf"
                 download
                 className="cv-link-container"
               >

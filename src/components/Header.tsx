@@ -24,7 +24,8 @@ const Header = () => {
 
         <div className="resume-header-container ">
           <a
-            href="/Resume/Resume-English.pdf"
+            // href="/Resume/Resume-English.pdf"
+            href="public/Resume/Resume-English.pdf"
             download
             className="resume-link-container"
           >
