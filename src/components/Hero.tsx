@@ -42,7 +42,7 @@ const Hero = () => {
           <div className="hero-information">
             <div className="download-cv-container">
               <a
-                href="public/CV/CV-portfolio-english.pdf"
+                href={import.meta.env.BASE_URL + "CV/CV-portfolio-english.pdf"}
                 download
                 className="cv-link-container"
               >

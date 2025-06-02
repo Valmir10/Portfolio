@@ -24,8 +24,7 @@ const Header = () => {
 
         <div className="resume-header-container ">
           <a
-            // href="/Resume/Resume-English.pdf"
-            href="public/Resume/Resume-English.pdf"
+            href={import.meta.env.BASE_URL + "Resume/Resume-Enghlish.pdf"}
             download
             className="resume-link-container"
           >
