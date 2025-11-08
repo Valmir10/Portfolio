@@ -132,13 +132,13 @@ const AboutMe = () => {
                       <div className="osbeck-high-school-container">
                         <div className="osbeck-high-scholl-wrapper">
                           <div className="osbeck-high-scholl-year">
-                            <h3>2019 - 2022</h3>
+                            <h3>2025</h3>
                           </div>
                           <div className="osbeck-high-school-role">
-                            <h2>Student</h2>
+                            <h2>Full-Stack Developer</h2>
                           </div>
                           <div className="osbeck-high-school-text">
-                            <h3>Osbeckgymnasiet Student</h3>
+                            <h3>Twentyfour</h3>
                           </div>
                         </div>
                       </div>
