@@ -29,6 +29,14 @@ const projects: Project[] = [
     liveUrl: "https://github.com/Valmir10/coffe-webbsite",
   },
   {
+    title: "OmniBank",
+    description:
+      "Take full control of your finances in one place. Aggregate bank accounts, set real-time budget alerts, and swap currencies with atomic crypto exchanges \u2013 all powered by a secure and modern dashboard.",
+    skills: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "Socket.io"],
+    repoUrl: "https://github.com/Valmir10/OmniBank",
+    liveUrl: "https://valmir10.github.io/OmniBank/",
+  },
+  {
     title: "Loni Cosmetics",
     description:
       "Experience Loni Cosmetics, an online store for high\u2011quality hair products with effortless browsing, secure checkout, and fast delivery.",
