@@ -1,7 +1,36 @@
 .home-page-container {
-  height: 100%;
-  width: 100vw;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  scroll-behavior: smooth;
+  position: relative;
+  isolation: isolate;
+}
+
+.home-page-container::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(
+      ellipse 600px 600px at 85% 10%,
+      rgba(94, 234, 212, 0.04),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 500px 500px at 8% 75%,
+      rgba(94, 234, 212, 0.03),
+      transparent
+    ),
+    linear-gradient(
+      rgba(94, 234, 212, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(94, 234, 212, 0.025) 1px,
+      transparent 1px
+    );
+  background-size: 100% 100%, 100% 100%, 80px 80px, 80px 80px;
+  pointer-events: none;
+  z-index: -1;
 }

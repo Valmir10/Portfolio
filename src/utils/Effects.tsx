@@ -8,13 +8,10 @@ const targets = [
   ".text-3-hero",
   ".hero-information",
   ".about-me-content-container",
-  "#project-information-wrapper-1",
-  "#project-information-wrapper-2",
-  "#project-image-container-1",
-  "#project-image-container-2",
-  "#contact-text-1",
-  "#contact-text-2",
-  ".contact-form-container",
+  ".project-card",
+  ".projects-header",
+  ".contact-header",
+  ".contact-form",
 ].join(",");
 
 export default function Effects() {
@@ -29,7 +26,7 @@ export default function Effects() {
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -20% 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -10% 0px" }
     );
 
     elements.forEach((el) => observer.observe(el));

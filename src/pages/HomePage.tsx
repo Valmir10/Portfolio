@@ -5,10 +5,12 @@ import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Effects from "../utils/Effects";
+import CursorGlow from "../components/CursorGlow";
 
 const HomePage = () => {
   return (
     <div className="home-page-container">
+      <CursorGlow />
       <Header />
       <Hero />
       <AboutMe />

@@ -1,156 +1,91 @@
 import React from "react";
 import "../styles/Projects.css";
-import FoodDelivery from "./FoodDelivery";
-import CoffeeWebsite from "./CoffeeWebsite";
-import LoniCosmetics from "./LoniCosmetics";
+import { FaGithub } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
+
+interface Project {
+  title: string;
+  description: string;
+  skills: string[];
+  repoUrl?: string;
+  liveUrl?: string;
+}
+
+const projects: Project[] = [
+  {
+    title: "Food Delivery Website",
+    description:
+      "This project lets you order food effortlessly. Browse the menu, place your order, and enjoy fast, fresh delivery \u2013 a true Taste of Life!",
+    skills: ["HTML", "CSS", "React", "Node.js", "Express.js", "MongoDB"],
+    repoUrl: "https://github.com/Valmir10/food-delivery-webbsite",
+    liveUrl: "https://valmir10.github.io/food-delivery-webbsite/",
+  },
+  {
+    title: "Coffee Website",
+    description:
+      "Order your perfect coffee in seconds. Explore rich flavors \u2013 from smooth vanilla to bold espresso \u2013 and enjoy freshly brewed comfort, anytime.",
+    skills: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "SQL"],
+    repoUrl: "https://github.com/Valmir10/coffe-webbsite",
+    liveUrl: "https://github.com/Valmir10/coffe-webbsite",
+  },
+  {
+    title: "Loni Cosmetics",
+    description:
+      "Experience Loni Cosmetics, an online store for high\u2011quality hair products with effortless browsing, secure checkout, and fast delivery.",
+    skills: ["HTML", "CSS"],
+    liveUrl: "https://lonicosmetics.se/",
+  },
+];
 
 const Projects: React.FC = () => (
-  <section id="projects" className="projects-section-container">
-    <FoodDelivery />
-    <CoffeeWebsite />
-    <LoniCosmetics />
+  <section id="projects" className="projects-section">
+    <div className="projects-header">
+      <h2>Projects</h2>
+      <p>A selection of things I've built</p>
+    </div>
+    <div className="projects-grid">
+      {projects.map((project, index) => (
+        <div className="project-card" key={index}>
+          <div className="project-card-number">
+            0{index + 1}
+          </div>
+          <h3 className="project-card-title">{project.title}</h3>
+          <p className="project-card-description">{project.description}</p>
+          <div className="project-card-skills">
+            {project.skills.map((skill, i) => (
+              <span key={i} className="skill-tag">
+                {skill}
+              </span>
+            ))}
+          </div>
+          <div className="project-card-links">
+            {project.repoUrl && (
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <FaGithub />
+                <span>Code</span>
+              </a>
+            )}
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link project-link-live"
+              >
+                <MdArrowOutward />
+                <span>Live</span>
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
   </section>
 );
 
 export default Projects;
-
-/*
-
-import "../styles/Projects.css";
-import foodDeliveryImage from "../img/food-delivery-image.png";
-import coffeWebsiteImage from "../img/coffe-website-image.png";
-import { FaGithub } from "react-icons/fa";
-import { MdArrowOutward } from "react-icons/md";
-
-const Projects = () => {
-  return (
-    <section id="projects" className="projects-section-container">
-      <div className="project-1-container">
-        <div className="project-information-left-container">
-          <div
-            className="project-information-wrapper"
-            id="project-information-wrapper-1"
-          >
-            <div className="project-name-header">
-              <h1>Food Delivery Website</h1>
-            </div>
-
-            <div className="project-text-information">
-              <h3>
-                This project lets you order food effortlessly. Browse the menu,
-                place your order, and enjoy fast, fresh delivery – a true Taste
-                of Life!
-              </h3>
-            </div>
-
-            <div className="project-skills-container">
-              <h3>Html, Css, React, Node.js, Express.js, Mongodb</h3>
-            </div>
-
-            <div className="project-navigation-container">
-              <div className="project-navigation-wrapper">
-                <div className="visit-project-container">
-                  <a
-                    href="https://github.com/Valmir10/food-delivery-webbsite"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-food-delivery-webbsite-container"
-                  >
-                    <div className="visit-project-img-contianer">
-                      <MdArrowOutward className="visit-icon-project-img" />
-                    </div>
-                  </a>
-                </div>
-
-                <div className="github-project-container">
-                  <a
-                    href="https://github.com/Valmir10/food-delivery-webbsite"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-food-delivery-webbsite-container"
-                  >
-                    <div className="github-project-img-container">
-                      <FaGithub className="github-icon-project-img" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="project-image-container" id="project-image-container-1">
-          <div className="project-image-wrapper">
-            <img src={foodDeliveryImage} alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div className="project-2-container">
-        <div className="project-information-left-container">
-          <div
-            className="project-information-wrapper"
-            id="project-information-wrapper-1"
-          >
-            <div className="project-name-header">
-              <h1>Coffe Website</h1>
-            </div>
-
-            <div className="project-text-information">
-              <h3>
-                Order your perfect coffee in seconds. Explore rich flavors –
-                from smooth vanilla to bold espresso – and enjoy freshly brewed
-                comfort, anytime.
-              </h3>
-            </div>
-
-            <div className="project-skills-container">
-              <h3>Html, Css, Javascript, Node.js, Express.js, Sql</h3>
-            </div>
-
-            <div className="project-navigation-container">
-              <div className="project-navigation-wrapper">
-                <div className="visit-project-container">
-                  <a
-                    href="https://github.com/Valmir10/coffe-webbsite"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-coffe-webbsite-container"
-                  >
-                    <div className="visit-project-img-contianer">
-                      <MdArrowOutward className="visit-icon-project-img" />
-                    </div>
-                  </a>
-                </div>
-
-                <div className="github-project-container">
-                  <a
-                    href="https://github.com/Valmir10/coffe-webbsite"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-coffe-webbsite-container"
-                  >
-                    <div className="github-project-img-container">
-                      <FaGithub className="github-icon-project-img" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="project-image-container" id="project-image-container-1">
-          <div className="project-image-wrapper">
-            <img src={coffeWebsiteImage} alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Projects;
-
-
-*/
