@@ -25,7 +25,7 @@ const Header = () => {
 
       <div className="resume-header-container">
         <a
-          href={import.meta.env.BASE_URL + "Resume/Resume English.pdf"}
+          href={import.meta.env.BASE_URL + "Resume/Valmir-Resume English.pdf"}
           download
           className="resume-link"
         >
@@ -57,7 +57,7 @@ const Header = () => {
           Contact
         </a>
         <a
-          href={import.meta.env.BASE_URL + "Resume/Resume English.pdf"}
+          href={import.meta.env.BASE_URL + "Resume/Valmir-Resume English.pdf"}
           download
           onClick={closeMenu}
           className="mobile-nav-resume"
