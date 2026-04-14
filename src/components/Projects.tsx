@@ -15,23 +15,23 @@ const projects: Project[] = [
   {
     title: "Food Delivery Website",
     description:
-      "This project lets you order food effortlessly. Browse the menu, place your order, and enjoy fast, fresh delivery \u2013 a true Taste of Life!",
+      "This project lets you order food effortlessly. Browse the menu, place your order, and enjoy fast, fresh delivery. A true Taste of Life!",
     skills: ["HTML", "CSS", "React", "Node.js", "Express.js", "MongoDB"],
     repoUrl: "https://github.com/Valmir10/food-delivery-webbsite",
     liveUrl: "https://valmir10.github.io/food-delivery-webbsite/",
   },
   {
-    title: "Coffee Website",
+    title: "NeonCode",
     description:
-      "Order your perfect coffee in seconds. Explore rich flavors \u2013 from smooth vanilla to bold espresso \u2013 and enjoy freshly brewed comfort, anytime.",
-    skills: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "SQL"],
-    repoUrl: "https://github.com/Valmir10/coffe-webbsite",
-    liveUrl: "https://github.com/Valmir10/coffe-webbsite",
+      "An AI powered coding arena where you solve challenges, earn XP, and climb the ranks. Let the AI Fixer judge your code and rise from Script Kiddie to Cyber Architect.",
+    skills: ["React", "TypeScript", "Vite", "Node.js", "Express", "Groq AI"],
+    repoUrl: "https://github.com/Valmir10/NeonCode",
+    liveUrl: "https://valmir10.github.io/NeonCode/",
   },
   {
     title: "OmniBank",
     description:
-      "Take full control of your finances in one place. Aggregate bank accounts, set real-time budget alerts, and swap currencies with atomic crypto exchanges \u2013 all powered by a secure and modern dashboard.",
+      "Take full control of your finances in one place. Aggregate bank accounts, set real time budget alerts, and swap currencies with atomic crypto exchanges. All powered by a secure and modern dashboard.",
     skills: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "Socket.io"],
     repoUrl: "https://github.com/Valmir10/OmniBank",
     liveUrl: "https://valmir10.github.io/OmniBank/",
@@ -39,7 +39,7 @@ const projects: Project[] = [
   {
     title: "Loni Cosmetics",
     description:
-      "Experience Loni Cosmetics, an online store for high\u2011quality hair products with effortless browsing, secure checkout, and fast delivery.",
+      "Experience Loni Cosmetics, an online store for high quality hair products with effortless browsing, secure checkout, and fast delivery.",
     skills: ["HTML", "CSS"],
     liveUrl: "https://lonicosmetics.se/",
   },

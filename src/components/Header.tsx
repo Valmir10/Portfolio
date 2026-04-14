@@ -1,6 +1,22 @@
 import { useState } from "react";
 import "../styles/Header.css";
 
+const downloadFiles = (files: string[]) => {
+  files.forEach((file) => {
+    const a = document.createElement("a");
+    a.href = import.meta.env.BASE_URL + file;
+    a.download = "";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+};
+
+const resumeFiles = [
+  "Resume/Valmir-Resume English.pdf",
+  "Resume/Valmir-Cover-Letter-English.pdf",
+];
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,13 +40,7 @@ const Header = () => {
       </nav>
 
       <div className="resume-header-container">
-        <a
-          href={import.meta.env.BASE_URL + "Resume/Valmir-Resume English.pdf"}
-          download
-          className="resume-link"
-        >
-          <button>Resume</button>
-        </a>
+        <button onClick={() => downloadFiles(resumeFiles)}>Resume</button>
       </div>
 
       <button
@@ -56,14 +66,15 @@ const Header = () => {
         <a href="#contact" onClick={closeMenu}>
           Contact
         </a>
-        <a
-          href={import.meta.env.BASE_URL + "Resume/Valmir-Resume English.pdf"}
-          download
-          onClick={closeMenu}
+        <button
+          onClick={() => {
+            downloadFiles(resumeFiles);
+            closeMenu();
+          }}
           className="mobile-nav-resume"
         >
           Resume
-        </a>
+        </button>
       </div>
     </header>
   );

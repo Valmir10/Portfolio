@@ -8,6 +8,17 @@ import { FaGithub } from "react-icons/fa";
 
 import heroImage from "../img/hero-image-portfolio.jpg";
 
+const downloadFiles = (files: string[]) => {
+  files.forEach((file) => {
+    const a = document.createElement("a");
+    a.href = import.meta.env.BASE_URL + file;
+    a.download = "";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+};
+
 const Hero = () => {
   return (
     <section id="about" className="hero-section-container">
@@ -25,7 +36,7 @@ const Hero = () => {
           </div>
 
           <div className="text-2-hero">
-            <h1>Hello I’m</h1>
+            <h1>Hello I'm</h1>
             <br className="break-line"></br>
             <h1 id="hero-valmir-zogaj">Valmir Zogaj.</h1>
           </div>
@@ -41,21 +52,22 @@ const Hero = () => {
 
           <div className="hero-information">
             <div className="download-cv-container">
-              <a
-                href={import.meta.env.BASE_URL + "CV/Valmir-CV.pdf"}
-                download
-                className="cv-link-container"
+              <button
+                onClick={() =>
+                  downloadFiles([
+                    "CV/Valmir-CV.pdf",
+                    "CV/Valmir-Cover-Letter-English.pdf",
+                  ])
+                }
               >
-                <button>
-                  <span className="download-cv-text">
-                    <span>Download</span>
-                    <span>CV</span>
-                  </span>
-                  <span className="download-cv-img-container">
-                    <img src={downloadCvImage} alt="download-cv-img" />
-                  </span>
-                </button>
-              </a>
+                <span className="download-cv-text">
+                  <span>Download</span>
+                  <span>CV</span>
+                </span>
+                <span className="download-cv-img-container">
+                  <img src={downloadCvImage} alt="download-cv-img" />
+                </span>
+              </button>
             </div>
 
             <div className="hero-information-social-media-container">
