@@ -1,15 +1,12 @@
 import { useState, useEffect } from "react";
 import "../styles/AboutMe.css";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
+import { SiTypescript, SiExpress, SiDocker, SiPhp, SiVuedotjs, SiDotnet } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
 import { PiFileSql } from "react-icons/pi";
+import { TbBrandCSharp } from "react-icons/tb";
 
 const AboutMe = () => {
   const [activeSection, setActiveSection] = useState("experience");
@@ -88,13 +85,13 @@ const AboutMe = () => {
                       <div className="malmo-jensen-container">
                         <div className="malmo-jensen-wrapper">
                           <div className="malmo-jensen-year">
-                            <h3>2024 - present</h3>
+                            <h3>2026</h3>
                           </div>
                           <div className="malmo-jensen-role">
-                            <h2>Front-End Developer</h2>
+                            <h2>Software Developer</h2>
                           </div>
                           <div className="malmo-jensen-text">
-                            <h3>Jensen College Student</h3>
+                            <h3>Dizparc</h3>
                           </div>
                         </div>
                       </div>
@@ -102,13 +99,13 @@ const AboutMe = () => {
                       <div className="loni-cosmetics-container">
                         <div className="loni-cosmetic-wrapper">
                           <div className="loni-cosmetic-year">
-                            <h3>Winter - 2025</h3>
+                            <h3>2025</h3>
                           </div>
                           <div className="loni-cosmetic-role">
-                            <h2>Freelance Web Developer</h2>
+                            <h2>Full Stack Developer</h2>
                           </div>
                           <div className="loni-cosmetic-text">
-                            <h3>E-commerce Startup</h3>
+                            <h3>Twentyfour</h3>
                           </div>
                         </div>
                       </div>
@@ -118,13 +115,13 @@ const AboutMe = () => {
                       <div className="karlstad-university-container">
                         <div className="karlstad-university-wrapper">
                           <div className="karlstad-university-year">
-                            <h3>2023 - 2024</h3>
+                            <h3>2024 - 2026</h3>
                           </div>
                           <div className="karlstad-univesity-role">
-                            <h2>Web Developer</h2>
+                            <h2>Web Developer Student</h2>
                           </div>
                           <div className="karlstad-university-text">
-                            <h3>Karlstad University Student</h3>
+                            <h3>Jensen Yrkeshögskola</h3>
                           </div>
                         </div>
                       </div>
@@ -132,13 +129,29 @@ const AboutMe = () => {
                       <div className="osbeck-high-school-container">
                         <div className="osbeck-high-scholl-wrapper">
                           <div className="osbeck-high-scholl-year">
-                            <h3>2025</h3>
+                            <h3>Winter 2025</h3>
                           </div>
                           <div className="osbeck-high-school-role">
-                            <h2>Full-Stack Developer</h2>
+                            <h2>Freelance Web Developer</h2>
                           </div>
                           <div className="osbeck-high-school-text">
-                            <h3>Twentyfour</h3>
+                            <h3>Loni Cosmetics</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="experience-information-row-3">
+                      <div className="karlstad-university-container">
+                        <div className="karlstad-university-wrapper">
+                          <div className="karlstad-university-year">
+                            <h3>2023 - 2024</h3>
+                          </div>
+                          <div className="karlstad-univesity-role">
+                            <h2>Web Developer Student</h2>
+                          </div>
+                          <div className="karlstad-university-text">
+                            <h3>Karlstad University</h3>
                           </div>
                         </div>
                       </div>
@@ -157,71 +170,100 @@ const AboutMe = () => {
                 <div className="skills-option-right-contianer">
                   <div className="skills-information-container">
                     <div className="skills-information-row-1">
-                      <div className="html-container">
-                        <div className="html-wrapper">
-                          <FaHtml5 className="html-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <FaReact className="skill-icon-img" />
                         </div>
                       </div>
-
-                      <div className="css-container">
-                        <div className="css-wrapper">
-                          <FaCss3 className="css-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <SiTypescript className="skill-icon-img" />
                         </div>
                       </div>
                     </div>
 
                     <div className="skills-information-row-2">
-                      <div className="javascript-container">
-                        <div className="javascript-wrapper">
-                          <IoLogoJavascript className="javascript-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <IoLogoJavascript className="skill-icon-img" />
                         </div>
                       </div>
-
-                      <div className="react-container">
-                        <div className="react-wrapper">
-                          <FaReact className="react-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <RiNextjsFill className="skill-icon-img" />
                         </div>
                       </div>
                     </div>
 
                     <div className="skills-information-row-3">
-                      <div className="typescript-container">
-                        <div className="typescript-wrapper">
-                          <SiTypescript className="typescript-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <FaNodeJs className="skill-icon-img" />
                         </div>
                       </div>
-
-                      <div className="node-js-container">
-                        <div className="node-js-wrapper">
-                          <FaNodeJs className="node-js-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <SiExpress className="skill-icon-img" />
                         </div>
                       </div>
                     </div>
 
                     <div className="skills-information-row-4">
-                      <div className="express-js-container">
-                        <div className="express-js-wrapper">
-                          <SiExpress className="express-js-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <TbBrandCSharp className="skill-icon-img" />
                         </div>
                       </div>
-
-                      <div className="next-js-container">
-                        <div className="next-js-wrapper">
-                          <RiNextjsFill className="next-js-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <SiDotnet className="skill-icon-img" />
                         </div>
                       </div>
                     </div>
 
                     <div className="skills-information-row-5">
-                      <div className="mongodb-container">
-                        <div className="mongodb-wrapper">
-                          <DiMongodb className="mongodb-icon-img" />
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <SiVuedotjs className="skill-icon-img" />
                         </div>
                       </div>
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <SiPhp className="skill-icon-img" />
+                        </div>
+                      </div>
+                    </div>
 
-                      <div className="sql-container">
-                        <div className="sql-wrapper">
-                          <PiFileSql className="sql-icon-img" />
+                    <div className="skills-information-row-6">
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <SiDocker className="skill-icon-img" />
+                        </div>
+                      </div>
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <DiMongodb className="skill-icon-img" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="skills-information-row-7">
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <PiFileSql className="skill-icon-img" />
+                        </div>
+                      </div>
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <FaHtml5 className="skill-icon-img" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="skills-information-row-8">
+                      <div className="skill-icon-container">
+                        <div className="skill-icon-wrapper">
+                          <FaCss3 className="skill-icon-img" />
                         </div>
                       </div>
                     </div>
@@ -239,16 +281,34 @@ const AboutMe = () => {
                 <div className="about-me-option-right-contianer">
                   <div className="about-me-text-container">
                     <h3>
-                      I’m Valmir, a 21-year-old web developer who thrives on
-                      building interactive, high-performance applications. With
-                      a strong focus on clean, scalable code, I enjoy tackling
-                      complex challenges and optimizing web solutions for
-                      efficiency and usability. <br></br>
-                      <br></br> Web development is more than just code—it’s
-                      about understanding how users interact with technology. By
-                      merging design principles with technical expertise, I
-                      create responsive and user-friendly solutions that feel
-                      seamless and intuitive to use.
+                      I'm finishing my Web Development studies at Jensen
+                      Yrkeshögskola in Malmö and will graduate in May 2026.
+                      <br />
+                      <br />
+                      At Dizparc, where I'm completing my internship as a
+                      Software Developer, I'm building a digital solution for
+                      retail that connects software with in store hardware
+                      systems. The backend is built in C# and .NET with SQL, and
+                      the system communicates with distributed devices through
+                      APIs. I also work on the frontend in TypeScript and with
+                      cloud solutions in Azure, including CI/CD pipelines through
+                      Azure DevOps.
+                      <br />
+                      <br />
+                      Before Dizparc, I interned at Twentyfour in Copenhagen as a
+                      full stack developer on client facing systems. I worked on
+                      the Koebt integration platform connecting multiple services
+                      through APIs in a microservices architecture. When a major
+                      update broke the documentation system, I set up the
+                      environment using Docker, traced the problem across
+                      services, and restored automated data flows.
+                      <br />
+                      <br />
+                      Across both internships I've been involved in sprint
+                      planning, requirement analysis and code reviews. I enjoy
+                      discussing technical decisions with both developers and non
+                      technical stakeholders, and I value clear communication
+                      when translating system design into real business impact.
                     </h3>
                   </div>
                 </div>

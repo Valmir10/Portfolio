@@ -24,7 +24,7 @@
 }
 
 .hero-image-container {
-  width: clamp(200px, 22vw, 320px);
+  width: clamp(220px, 26vw, 380px);
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;

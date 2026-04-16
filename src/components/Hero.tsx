@@ -43,10 +43,10 @@ const Hero = () => {
 
           <div className="text-3-hero">
             <h3>
-              Frontend developer student in Malmö, passionate about building
-              seamless and dynamic web experiences. I focus on creating
-              intuitive, high-performance applications that combine design and
-              functionality
+              I'm Valmir, a 22 year old developer based in Malmö with a passion
+              for building reliable, high performance web applications. I care
+              about clean code, smart design and creating digital experiences
+              that actually work for the people using them
             </h3>
           </div>
 

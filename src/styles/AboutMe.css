@@ -116,7 +116,8 @@
 }
 
 .experience-information-row-1,
-.experience-information-row-2 {
+.experience-information-row-2,
+.experience-information-row-3 {
   display: flex;
   gap: 16px;
 }
@@ -126,6 +127,7 @@
 .karlstad-university-container,
 .osbeck-high-school-container {
   flex: 1;
+  max-width: calc(50% - 8px);
   display: flex;
 }
 
@@ -207,39 +209,17 @@
   gap: 16px;
 }
 
-.skills-information-row-1,
-.skills-information-row-2,
-.skills-information-row-3,
-.skills-information-row-4,
-.skills-information-row-5 {
+[class^="skills-information-row"] {
   display: contents;
 }
 
-.html-container,
-.css-container,
-.javascript-container,
-.react-container,
-.typescript-container,
-.node-js-container,
-.express-js-container,
-.next-js-container,
-.mongodb-container,
-.sql-container {
+.skill-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.html-wrapper,
-.css-wrapper,
-.javascript-wrapper,
-.react-wrapper,
-.typescript-wrapper,
-.node-js-wrapper,
-.express-js-wrapper,
-.next-js-wrapper,
-.mongodb-wrapper,
-.sql-wrapper {
+.skill-icon-wrapper {
   width: 100%;
   aspect-ratio: 1;
   max-width: 110px;
@@ -252,45 +232,18 @@
   transition: border-color 0.3s ease;
 }
 
-.html-wrapper:hover,
-.css-wrapper:hover,
-.javascript-wrapper:hover,
-.react-wrapper:hover,
-.typescript-wrapper:hover,
-.node-js-wrapper:hover,
-.express-js-wrapper:hover,
-.next-js-wrapper:hover,
-.mongodb-wrapper:hover,
-.sql-wrapper:hover {
+.skill-icon-wrapper:hover {
   border-color: rgba(94, 234, 212, 0.2);
 }
 
-.html-icon-img,
-.css-icon-img,
-.javascript-icon-img,
-.react-icon-img,
-.typescript-icon-img,
-.node-js-icon-img,
-.express-js-icon-img,
-.next-js-icon-img,
-.mongodb-icon-img,
-.sql-icon-img {
+.skill-icon-img {
   height: 40%;
   width: 40%;
   color: white;
   transition: color 0.3s ease-in-out;
 }
 
-.html-icon-img:hover,
-.css-icon-img:hover,
-.javascript-icon-img:hover,
-.react-icon-img:hover,
-.typescript-icon-img:hover,
-.node-js-icon-img:hover,
-.express-js-icon-img:hover,
-.next-js-icon-img:hover,
-.mongodb-icon-img:hover,
-.sql-icon-img:hover {
+.skill-icon-img:hover {
   color: rgb(5, 244, 208);
   cursor: pointer;
 }
@@ -392,8 +345,16 @@
   }
 
   .experience-information-row-1,
-  .experience-information-row-2 {
+  .experience-information-row-2,
+  .experience-information-row-3 {
     flex-direction: column;
+  }
+
+  .malmo-jensen-container,
+  .loni-cosmetics-container,
+  .karlstad-university-container,
+  .osbeck-high-school-container {
+    max-width: 100%;
   }
 
   .skills-information-container {
@@ -401,16 +362,7 @@
     gap: 12px;
   }
 
-  .html-wrapper,
-  .css-wrapper,
-  .javascript-wrapper,
-  .react-wrapper,
-  .typescript-wrapper,
-  .node-js-wrapper,
-  .express-js-wrapper,
-  .next-js-wrapper,
-  .mongodb-wrapper,
-  .sql-wrapper {
+  .skill-icon-wrapper {
     max-width: 90px;
   }
 }
